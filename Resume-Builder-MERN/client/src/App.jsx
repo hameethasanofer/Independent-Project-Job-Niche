@@ -51,7 +51,7 @@ function App() {
               <Navbar />
 
               {/* Main content area grows to fill space */}
-              <main className="flex-grow">
+              <main className="flex-grow mt-16">
                 <Routes>
                   <Route path="/" element={<LandingPage />} />
                   <Route path="/sign-in" element={<SignIn />} />
