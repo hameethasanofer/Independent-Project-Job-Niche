@@ -1,0 +1,151 @@
+/* Container */
+.education-container {
+  padding: 20px;
+  min-height: 80vh;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Title */
+.title {
+  text-align: center;
+  color: white;
+  font-size: 24px;
+  margin-bottom: 50px;
+  background: linear-gradient(to right, #2563EB, #4F46E5);
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+}
+
+/* Form Grid */
+.form-grid {
+  
+  grid-column: 1 / -1; /* span both columns */
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px 80px;
+}
+
+/* Label */
+.form-grid label {
+  display: block;
+  font-weight: 600;
+  color: rgb(68, 66, 66);
+  margin-bottom: 8px;
+  font-size: 1rem;
+}
+
+/* Input Group */
+.input-group {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Input with icon wrapper */
+.input-icon {
+  position: relative;
+  display: flex;
+  align-items: center;
+  color: gray;
+}
+
+/* Icon style */
+.input-icon .icon {
+  position: absolute;
+  right: 12px;
+  color: gray !important;
+  font-size: 1.2rem;
+  pointer-events: none; /* so icon doesn’t interfere with input */
+}
+
+/* Input field */
+.input-icon input {
+  width: 100%;
+  height: 55px;
+  padding-left: 40px; /* space for icon */
+  border-radius: 0.5rem;
+  border: 1px solid #d1d5db;
+  font-size: 1rem;
+  outline: none;
+  box-sizing: border-box;
+  transition: all 0.2s ease-in-out;
+}
+
+.input-icon input:focus {
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 2px #3b82f6;
+}
+
+
+
+
+.form-wrapper {
+  max-width: 900px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px 60px;
+}
+
+.nav-buttons {
+  grid-column: 1 / -1; /* span both columns */
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 30px;
+}
+
+/* Left button aligned left */
+.nav-btn.left-btn {
+  justify-self: start;
+  background: linear-gradient(to right, #2563EB, #4F46E5);
+  color: white;
+  padding: 10px 16px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 1rem;
+  white-space: nowrap;
+  max-width: 100%;
+  box-sizing: border-box;
+  transition: background-color 0.3s ease;
+}
+
+/* Right button aligned right */
+.nav-btn.right-btn {
+  justify-self: end;
+  background: linear-gradient(to right, #2563EB, #4F46E5);
+  color: white;
+  padding: 10px 16px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 1rem;
+  white-space: nowrap;
+  max-width: 100%;
+  box-sizing: border-box;
+  transition: background-color 0.3s ease;
+}
+
+.nav-btn.left-btn:hover,
+.nav-btn.right-btn:hover {
+  background-color: #1e36a2;
+}
+
+/* Responsive for smaller screens */
+@media (max-width: 768px) {
+  .form-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .nav-buttons {
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+    padding: 0;
+  }
+
+  .nav-btn {
+    max-width: 100%;
+    text-align: center;
+    padding: 12px 0;
+  }
+}
